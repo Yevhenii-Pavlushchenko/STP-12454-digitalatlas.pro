@@ -28,7 +28,7 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
-  padding-top: 94px;
+  padding-top: 79px;
   font-family: var(--font-inter);
   background-color: var(--black-color);
   color: var(--white-color);
@@ -38,7 +38,7 @@ body[data-scroll='false'] {
 }
 @media only screen and (min-width: 1440px) {
   body {
-    padding-top: 114px;
+    padding-top: 0px;
   }
 }
 

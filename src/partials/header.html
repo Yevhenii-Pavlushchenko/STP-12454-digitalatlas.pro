@@ -1,36 +1,46 @@
 <header class="header">
   <div class="container">
     <a href="./" class="logo-link">
-      <img
-        class="logo-img"
-        src="/img/logo.png"
-        srcset="/img/logo.png 1x, /img/logo@2x.png 2x"
-        alt="Relaxing Skin ASMR Makeover Logo"
-        width="70"
-        height="70"
-      />
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/img/logo.png 1x, /img/logo@2x.png 2x"
+          type="image/png"
+        />
+        <source
+          srcset="/img/logo-mobile.png 1x, /img/logo-mobile@2x.png 2x"
+          type="image/png"
+        />
+        <img
+          class="logo-img"
+          src="/img/logo-mobile.png"
+          alt="Maze Classic Logo"
+          width="113"
+          height="43"
+        />
+      </picture>
     </a>
     <button class="btn-burger" type="button" data-menu-open>
       <svg class="btn-burger-icon">
-        <use href="/sprite.svg#burger-menu"></use>
+        <use href="/sprite.svg#icon-burger"></use>
       </svg>
     </button>
     <nav class="navigation">
       <ul class="list-navigation">
         <li class="item-navigation">
-          <a href="#about" class="item-nav-link">About the Game</a>
+          <a href="#" class="item-nav-link">Home</a>
         </li>
         <li class="item-navigation">
-          <a href="#how-to-play" class="item-nav-link">How to Play</a>
+          <a href="#" class="item-nav-link">Gameplay</a>
         </li>
         <li class="item-navigation">
-          <a href="#features" class="item-nav-link">Features</a>
+          <a href="#" class="item-nav-link">Modes</a>
         </li>
         <li class="item-navigation">
-          <a href="#faq" class="item-nav-link">FAQ</a>
+          <a href="#" class="item-nav-link">Features</a>
         </li>
         <li class="item-navigation">
-          <a href="#contact" class="item-nav-link">Contact</a>
+          <a href="#" class="item-nav-link">Reviews</a>
         </li>
       </ul>
     </nav>

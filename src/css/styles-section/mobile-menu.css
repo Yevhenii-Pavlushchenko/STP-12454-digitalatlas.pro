@@ -2,41 +2,44 @@
   padding: 20px 0 24px 0;
   position: fixed;
   inset: 0;
-  transform: translateX(100%);
   z-index: 1000;
   width: 100%;
   height: 100%;
-  min-width: 320px;
-  max-width: 375px;
-  background-color: var(--background-color);
+  background-color: var(--black-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   opacity: 0;
-  transition:
-    transform 0.5s ease-out,
-    opacity 0.5s ease-out;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
 
   .container {
     width: 100%;
     max-width: 320px;
+    display: flex;
+    flex-direction: column;
   }
 }
+
 .mobile-menu[data-visible='close'] {
-  transform: translateX(100%);
   opacity: 0;
   pointer-events: none;
 }
 
 .mobile-menu[data-visible='open'] {
-  transform: translateX(0);
   opacity: 1;
   pointer-events: auto;
 }
+
 .mm-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   display: block;
   width: 40px;
   height: 40px;
@@ -44,9 +47,14 @@
   border: none;
   margin-left: auto;
   outline: none;
-  transition: ease-in 200ms;
+  transition: stroke 300ms ease-in;
+  stroke: var(--white-color);
 
-  stroke: var(--black-color);
+  &:hover,
+  &:focus-visible,
+  &:active {
+    stroke: var(--orange-color);
+  }
 }
 
 .btn-close-icon {
@@ -54,33 +62,29 @@
   height: 40px;
 }
 
-.mm-close-btn:active > .btn-close-icon {
-  stroke: var(--accent-color);
-}
-
 .mm-list-navigation {
-  margin: 20px auto 0;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   gap: 24px;
 }
+
 .mm-item-nav-link {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 600;
-  transition: color 0.3s ease-in-out;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus-visible,
   &:active {
-    color: var(--accent-color);
-  }
-  &:hover {
-    color: var(--accent-color);
-  }
-  &:focus {
-    color: var(--accent-color);
+    color: var(--orange-color);
   }
 }
+
 @media only screen and (min-width: 1440px) {
   .mobile-menu {
     display: none;
