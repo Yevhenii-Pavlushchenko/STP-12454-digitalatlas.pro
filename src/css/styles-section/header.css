@@ -66,8 +66,8 @@
     font-size: 20px;
     line-height: 1.45;
     text-align: center;
-    color: var(--black-color);
-    transition: color 200ms ease-in-out;
+    color: var(--bronze-color);
+    transition: color 300ms ease;
     &:hover {
       color: var(--accent-color);
     }

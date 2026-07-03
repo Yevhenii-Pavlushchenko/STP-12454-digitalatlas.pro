@@ -1,13 +1,12 @@
 :root {
   --font-dm-sans: 'DM Sans', sans-serif;
-  --font-old-standard: 'Old Standard TT', serif;
+  --font-inter: 'Inter', sans-serif;
 
-  --black-color: #3a2535;
+  --black-color: #000000;
   --white-color: #ffffff;
-  --background-color: #fffbf8;
   --accent-color: #c85c78;
-  --accent-lite-color: #f08ea8;
-  --text-color: #875267;
+  --bronze-color: #9a8270;
+  --orange-color: #f38c28;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,8 +29,9 @@ body {
   min-height: 100vh;
   margin: 0;
   padding-top: 94px;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  font-family: var(--font-inter);
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 body[data-scroll='false'] {
   overflow: hidden;
@@ -53,22 +53,13 @@ section {
   }
 }
 
-h1,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-old-standard);
-  color: var(--black-color);
-}
 
-p,
+h1,
 h2,
-span,
 a,
 li {
   font-family: var(--font-dm-sans);
-  color: var(--text-color);
+  color: var(--white-color);
 }
 
 .visually-hidden {
