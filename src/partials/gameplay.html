@@ -1,1 +1,150 @@
-<h2>Gameplay</h2>
+<section class="gameplay">
+  <div class="container gameplay-wrapper">
+    <!-- Текстова колонка (Заголовок і підзаголовок) -->
+    <div class="gameplay-info">
+      <h2 class="gameplay-title">Simple to move. Harder to master.</h2>
+      <p class="gameplay-subtitle">There's no complicated system here.</p>
+    </div>
+
+    <!-- Контейнер зі слайдами -->
+    <div class="gameplay-slider-viewport">
+      <div class="gameplay-slider-track">
+        <!-- Слайд 1 -->
+        <figure class="gameplay-slide">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                /img/gameplay/gameplay1.png    1x,
+                /img/gameplay/gameplay1@2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              srcset="
+                /img/gameplay/gameplay1-mob.png    1x,
+                /img/gameplay/gameplay1-mob@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              class="gameplay-img"
+              src="/img/gameplay/gameplay1.png"
+              alt="Swipe to guide the light"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="gameplay-caption">
+            Swipe to guide the light
+          </figcaption>
+        </figure>
+
+        <!-- Слайд 2 -->
+        <figure class="gameplay-slide">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                /img/gameplay/gameplay2.png    1x,
+                /img/gameplay/gameplay2@2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              srcset="
+                /img/gameplay/gameplay2-mob.png    1x,
+                /img/gameplay/gameplay2-mob@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              class="gameplay-img"
+              src="/img/gameplay/gameplay2.png"
+              alt="Follow the paths"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="gameplay-caption">Follow the paths</figcaption>
+        </figure>
+
+        <!-- Слайд 3 -->
+        <figure class="gameplay-slide">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                /img/gameplay/gameplay3.png    1x,
+                /img/gameplay/gameplay3@2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              srcset="
+                /img/gameplay/gameplay3-mob.png    1x,
+                /img/gameplay/gameplay3-mob@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              class="gameplay-img"
+              src="/img/gameplay/gameplay3.png"
+              alt="Find the exit"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="gameplay-caption">Find the exit</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Блок навігації (тепер лежить під слайдами по центру) -->
+    <div class="gameplay-controls" aria-label="Slider navigation">
+      <button
+        type="button"
+        class="gameplay-ctrl-btn btn-prev"
+        aria-label="Previous slide"
+      >
+        <svg class="ctrl-icon"><use xlink:href="#arow-back"></use></svg>
+      </button>
+
+      <div class="gameplay-dots" aria-label="Slides">
+        <button
+          type="button"
+          class="gameplay-dot active"
+          data-slide="0"
+          aria-label="Go to slide 1"
+        ></button>
+        <button
+          type="button"
+          class="gameplay-dot"
+          data-slide="1"
+          aria-label="Go to slide 2"
+        ></button>
+        <button
+          type="button"
+          class="gameplay-dot"
+          data-slide="2"
+          aria-label="Go to slide 3"
+        ></button>
+      </div>
+
+      <button
+        type="button"
+        class="gameplay-ctrl-btn btn-next"
+        aria-label="Next slide"
+      >
+        <svg class="ctrl-icon"><use xlink:href="#arow-forward"></use></svg>
+      </button>
+    </div>
+
+    <!-- Нижній опис (новий блок з макета) -->
+    <div class="gameplay-description">
+      <p>
+        That’s it. And yet... some mazes feel effortless, while others make you
+        pause, retrace, and rethink everything.
+      </p>
+      <p>It’s not about speed.</p>
+      <p>It’s about seeing what you missed the first time.</p>
+    </div>
+  </div>
+</section>

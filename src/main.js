@@ -1,3 +1,3 @@
 import './js/burgerMenu';
 import './js/how-to-play-swiper';
-import './js/about';
+import './js/gameplay-swiper';
