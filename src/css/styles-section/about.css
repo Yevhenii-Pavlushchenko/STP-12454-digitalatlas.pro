@@ -1,0 +1,132 @@
+.about {
+  scroll-margin-top: 94px;
+  @media only screen and (min-width: 1440px) {
+    scroll-margin-top: 114px;
+  }
+}
+.about > .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+  }
+}
+.descr-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  @media (min-width: 1440px) {
+    width: 552px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.about-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: center;
+  @media (min-width: 1440px) {
+    text-align: left;
+    width: 480px;
+  }
+}
+.picture-wrapper {
+  position: relative;
+  width: 335px;
+  height: 250px;
+
+  @media (min-width: 1440px) {
+    width: 552px;
+    height: 410px;
+  }
+}
+
+/* Исходное состояние карточек */
+.picture-wrapper-item {
+  position: absolute;
+  border-radius: 16px;
+  box-shadow: 0 4px 19px 0 rgba(162, 98, 115, 0.4);
+  /* width: 125px;
+  height: 154px; */
+  padding: 0 !important;
+  overflow: hidden;
+
+  opacity: 0;
+  transform: translateX(100vw);
+  transition:
+    transform 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 1.8s ease;
+}
+.picture-wrapper[data-observer='true'] .picture-wrapper-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+.picture-wrapper[data-observer='true'] .picture-wrapper-item:nth-child(1) {
+  width: 136px;
+  height: 148px;
+  transition-delay: 0.2s;
+  @media (min-width: 1440px) {
+    width: 224px;
+    height: 244px;
+  }
+}
+.picture-wrapper[data-observer='true'] .picture-wrapper-item:nth-child(2) {
+  width: 125px;
+  height: 154px;
+  transition-delay: 0.4s;
+  @media (min-width: 1440px) {
+    width: 205px;
+    height: 254px;
+  }
+}
+.picture-wrapper[data-observer='true'] .picture-wrapper-item:nth-child(3) {
+  width: 118px;
+  height: 162px;
+  transition-delay: 0.6s;
+  @media (min-width: 1440px) {
+    width: 194px;
+    height: 267px;
+  }
+}
+.about {
+  overflow-x: hidden;
+}
+
+.picture-wrapper-item:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.picture-wrapper-item:nth-child(2) {
+  top: 44px;
+  left: 102px;
+  z-index: 1;
+
+  @media (min-width: 1440px) {
+    top: 84px;
+    left: 167px;
+  }
+}
+.picture-wrapper-item:nth-child(3) {
+  right: 0px;
+  bottom: 0px;
+}
+.picture-wrapper-item picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.picture-wrapper-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}

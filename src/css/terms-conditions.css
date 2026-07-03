@@ -1,0 +1,17 @@
+.domain {
+  text-decoration: underline;
+}
+.paragraph-secondary-terms {
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 8px;
+  color: var(--black-color);
+}
+ol.list-secondary-pages li {
+  display: list-item !important;
+  list-style-type: decimal !important;
+  margin-bottom: 12px;
+  font-size: 16px;
+
+  color: var(--black-color);
+}
