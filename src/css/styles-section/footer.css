@@ -1,70 +1,62 @@
 .footer {
-  /* width: 100%;
-  max-width: 375px;
-  margin: 0 auto; */
-  background-color: var(--black-color);
-  padding: 32px 0;
-  @media screen and (min-width: 1440px) {
-    max-width: 100%;
-    padding: 43px 0;
+  padding: 12px 0;
+}
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 25px 0;
   }
 }
-.footer .container {
-  @media screen and (min-width: 1440px) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-.footer-list {
-  margin: 0;
-  padding: 0;
+.footer-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  gap: 24px;
+  align-items: center;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
   @media screen and (min-width: 1440px) {
-    flex-direction: row;
-    gap: 32px;
+    gap: 348px;
   }
 }
 
-.footer-item {
-  text-align: center;
-  @media screen and (min-width: 1440px) {
-    text-align: left;
-  }
-}
 
 .footer-link {
-  display: inline-block;
+  font-family: var(--font-inter);
+  font-size: 14px;
   text-decoration: none;
-  color: var(--white-color);
-  line-height: 1.75;
-  font-size: 16px;
-  transition: color 200ms ease-in;
-}
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
 
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-color);
+  &:hover {
+    color: var(--orange-color);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer-link {
+    font-size: 20px;
+  }
 }
 
 .footer-copyright {
-  margin: 32px 0 0 0;
-  text-align: center;
-  color: var(--white-color);
-  font-size: 13px;
+  font-family: var(--font-inter);
+  font-size: 14px;
   line-height: 1.5;
-  font-weight: 400;
+  opacity: 0.6;
+  text-align: center;
+  margin: 0;
+  max-width: 290px;
 
   @media screen and (min-width: 1440px) {
-    margin: 0;
-    text-align: right;
-    height: 28px;
-    line-height: 28px;
+    font-size: 20px;
+    max-width: 100%;
   }
 }

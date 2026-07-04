@@ -1,6 +1,4 @@
-.gameplay {
-  background-color: var(--black-color);
-}
+
 
 .gameplay-wrapper {
   display: flex;
@@ -117,13 +115,12 @@
 
 .gameplay-caption {
   font-family: var(--font-inter);
-  font-size: 16px;
-  color: var(--white-color);
+  font-size: 14px;
   text-align: center;
   line-height: 1.4;
 
   @media only screen and (min-width: 1440px) {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -152,7 +149,7 @@
   background-color: var(--black-color);
   border: 1px solid var(--white-color);
   color: var(--white-color);
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 
   &:hover {
     background-color: var(--orange-color);
@@ -189,7 +186,7 @@
   opacity: 0.6;
   cursor: pointer;
   padding: 0;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 
   &.active {
     opacity: 1;
@@ -216,7 +213,6 @@
   font-size: 16px;
   line-height: 1.5;
   font-style: italic;
-  color: var(--white-color);
 
   @media only screen and (min-width: 1440px) {
     font-size: 20px;

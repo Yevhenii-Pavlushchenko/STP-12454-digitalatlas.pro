@@ -1,16 +1,4 @@
-/* --- Секция Modes --- */
 
-.modes {
-  background-color: var(--black-color);
-  color: var(--white-color);
-  padding: 40px 0;
-}
-
-@media screen and (min-width: 1440px) {
-  .modes {
-    padding: 80px 0;
-  }
-}
 
 .modes-container {
   display: flex;
@@ -27,9 +15,6 @@
   }
 }
 
-.modes-content {
-  /* Стили для мобилки отсутствуют, блок идет по потоку */
-}
 
 @media screen and (min-width: 1440px) {
   .modes-content {
@@ -40,6 +25,7 @@
 
 .modes-title {
   font-size: 26px;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -53,7 +39,6 @@
 .modes-tagline {
   font-size: 14px;
   font-style: italic;
-  color: var(--white-color);
   margin-bottom: 30px;
 }
 
@@ -65,7 +50,6 @@
 }
 
 .modes-subtitle {
-  font-family: var(--font-inter);
   font-size: 14px;
   margin-bottom: 10px;
 }
