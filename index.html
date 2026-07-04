@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/STP-12943/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze Classic – Find the Exit, Train Your Mind</title>
+    <meta
+      name="description"
+      content="Maze Classic is a relaxing yet challenging puzzle game with over 100 labyrinth levels. Swipe, think, and find your way out anytime, even offline."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="module" crossorigin src="/STP-12943/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/STP-12943/assets/styles-HmtGwEVl.css">
+  </head>
+  <body data-scroll="true">
+    <header class="header">
+  <div class="container">
+    <a href="./" class="logo-link">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/STP-12943/img/logo.png 1x, /STP-12943/img/logo@2x.png 2x"
+          type="image/png"
+        />
+        <source
+          srcset="/STP-12943/img/logo-mobile.png 1x, /STP-12943/img/logo-mobile@2x.png 2x"
+          type="image/png"
+        />
+        <img
+          class="logo-img"
+          src="/STP-12943/img/logo-mobile.png"
+          alt="Maze Classic Logo"
+          width="113"
+          height="43"
+        />
+      </picture>
+    </a>
+    <button class="btn-burger" type="button" data-menu-open>
+      <svg class="btn-burger-icon">
+        <use href="/STP-12943/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <nav class="navigation">
+      <ul class="list-navigation">
+        <li class="item-navigation">
+          <a href="#" class="item-nav-link">Home</a>
+        </li>
+        <li class="item-navigation">
+          <a href="#gameplay" class="item-nav-link">Gameplay</a>
+        </li>
+        <li class="item-navigation">
+          <a href="#modes" class="item-nav-link">Modes</a>
+        </li>
+        <li class="item-navigation">
+          <a href="#feature-info" class="item-nav-link">Features</a>
+        </li>
+        <li class="item-navigation">
+          <a href="#reviews" class="item-nav-link">Reviews</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <main>
+      <section class="hero">
+  <div class="hero-wrapper">
+    <div class="hero-title-wrapper">
+      <h1 class="hero-title">The First Turn</h1>
+      <p class="hero-subtitle">
+        Look, every maze is basically the same at first - there's a path, and
+        you just gotta pick which way to go.
+      </p>
+      <div class="hero-story-wrapper">
+        <p class="hero-story-text">You move your finger. The light follows.</p>
+        <p>
+          At first, it's easy. One turn, then another. You see the exit almost
+          immediately.
+        </p>
+        <p>But then things get tricky.</p>
+        <p>
+          The paths get longer. The turns less obvious. And suddenly, you’re not
+          just playing — you’re thinking.
+        </p>
+        <p>Maze Classic doesn’t rush you.</p>
+        <p>No pressure - take your time and work it out.</p>
+      </div>
+      <a href="/#" class="hero-btn">Start Your First Maze</a>
+    </div>
+    <figure class="hero-img-wrapper">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/STP-12943/img/hero/hero.png 1x, /STP-12943/img/hero/hero@2x.png 2x"
+          type="image/png"
+        />
+
+        <source
+          srcset="/STP-12943/img/hero/hero-mob.png 1x, /STP-12943/img/hero/hero-mob@2x.png 2x"
+          type="image/png"
+        />
+        <img
+          class="hero-img"
+          src="/STP-12943/img/hero/hero.png"
+          alt="Hero image"
+          loading="lazy"
+        />
+      </picture>
+    </figure>
+  </div>
+</section>
+
+      <section id="gameplay" class="gameplay">
+  <div class="container gameplay-wrapper">
+    <div class="gameplay-info">
+      <h2 class="gameplay-title">Simple to move. Harder to master.</h2>
+      <p class="gameplay-subtitle">There's no complicated system here.</p>
+    </div>
+
+    <div class="gameplay-slider-viewport">
+      <div class="gameplay-slider-track" data-slider-track>
+        <figure class="gameplay-slide" data-slider-slide>
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/STP-12943/img/gameplay/gameplay1.png 1x, /STP-12943/img/gameplay/gameplay1@2x.png 2x"
+              type="image/png"
+            />
+            <source
+              srcset="/STP-12943/img/gameplay/gameplay1-mob.png 1x, /STP-12943/img/gameplay/gameplay1-mob@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="gameplay-img"
+              src="/STP-12943/img/gameplay/gameplay1.png"
+              alt="Swipe to guide the light"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="gameplay-caption">
+            Swipe to guide the light
+          </figcaption>
+        </figure>
+
+        <figure class="gameplay-slide" data-slider-slide>
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/STP-12943/img/gameplay/gameplay2.png 1x, /STP-12943/img/gameplay/gameplay2@2x.png 2x"
+              type="image/png"
+            />
+            <source
+              srcset="/STP-12943/img/gameplay/gameplay2-mob.png 1x, /STP-12943/img/gameplay/gameplay2-mob@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="gameplay-img"
+              src="/STP-12943/img/gameplay/gameplay2.png"
+              alt="Follow the paths"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="gameplay-caption">Follow the paths</figcaption>
+        </figure>
+
+        <figure class="gameplay-slide" data-slider-slide>
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/STP-12943/img/gameplay/gameplay3.png 1x, /STP-12943/img/gameplay/gameplay3@2x.png 2x"
+              type="image/png"
+            />
+            <source
+              srcset="/STP-12943/img/gameplay/gameplay3-mob.png 1x, /STP-12943/img/gameplay/gameplay3-mob@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="gameplay-img"
+              src="/STP-12943/img/gameplay/gameplay3.png"
+              alt="Find the exit"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="gameplay-caption">Find the exit</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="gameplay-controls" aria-label="Slider navigation">
+      <button
+        type="button"
+        class="gameplay-ctrl-btn btn-prev"
+        data-slider-prev
+        aria-label="Previous slide"
+      >
+        <svg class="ctrl-icon"><use href="/STP-12943/sprite.svg#arow-back"></use></svg>
+      </button>
+
+      <div class="gameplay-dots" aria-label="Slides">
+        <button
+          type="button"
+          class="gameplay-dot active"
+          data-slider-dot
+          data-slide="0"
+          aria-label="Go to slide 1"
+        ></button>
+        <button
+          type="button"
+          class="gameplay-dot"
+          data-slider-dot
+          data-slide="1"
+          aria-label="Go to slide 2"
+        ></button>
+        <button
+          type="button"
+          class="gameplay-dot"
+          data-slider-dot
+          data-slide="2"
+          aria-label="Go to slide 3"
+        ></button>
+      </div>
+
+      <button
+        type="button"
+        class="gameplay-ctrl-btn btn-next"
+        data-slider-next
+        aria-label="Next slide"
+      >
+        <svg class="ctrl-icon">
+          <use href="/STP-12943/sprite.svg#arow-forward"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="gameplay-description">
+      <p>
+        That’s it. And yet... some mazes feel effortless, while others make you
+        pause, retrace, and rethink everything.
+      </p>
+      <p>It’s not about speed.</p>
+      <p>It’s about seeing what you missed the first time.</p>
+    </div>
+  </div>
+</section>
+
+      <section id="modes" class="modes">
+  <div class="container modes-container">
+    <div class="modes-content">
+      <h2 class="modes-title">Things get interesting the further you get</h2>
+      <p class="modes-tagline">You won’t notice it at first.</p>
+
+      <div class="modes-details">
+        <p class="modes-subtitle">But with each level:</p>
+        <ul class="modes-list">
+          <li class="modes-item">The shapes become less predictable</li>
+          <li class="modes-item">The routes become less obvious</li>
+          <li class="modes-item">The decisions start to matter more</li>
+        </ul>
+      </div>
+
+      <div class="modes-description">
+        <p>
+          From small relaxing puzzles to complex labyrinths,<br />
+          you'll find yourself really having to focus and remember the layout.
+        </p>
+        <p>
+          More than 100 variations — <br />
+          and none of them feel exactly the same.
+        </p>
+      </div>
+    </div>
+
+    <figure class="modes-preview">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="./img/modes/modes.png 1x, ./img/modes/modes@2x.png 2x"
+          type="image/png"
+        />
+        <source
+          srcset="./img/modes/modes-mob.png 1x, ./img/modes/modes-mob@2x.png 2x"
+          type="image/png"
+        />
+        <img
+          src="./img/modes/modes.png"
+          alt="Maze gameplay preview on mobile screen"
+          class="modes-img"
+          loading="lazy"
+        />
+      </picture>
+    </figure>
+  </div>
+</section>
+
+      <section id="feature-info" class="feature-info">
+  <div class="container feature-info-wrapper">
+    <div class="feature-info-header">
+      <h2 class="feature-info-title">
+        It’s quiet, no rush – just you figuring out the maze.
+      </h2>
+      <p class="feature-info-subtitle">
+        Some games try to keep you busy.<br />This one lets you slow down.
+      </p>
+    </div>
+
+    <div class="feature-info-slider-viewport">
+      <div class="feature-info-slider-track" data-fi-track>
+        <figure class="feature-info-slide" data-fi-slide>
+          <picture>
+            <source
+              srcset="./img/feature-info/feature-info1.png 1x, ./img/feature-info/feature-info1@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="feature-info-img"
+              src="./img/feature-info/feature-info1.png"
+              alt="No internet required icon"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="feature-info-caption">
+            No internet required
+          </figcaption>
+        </figure>
+
+        <figure class="feature-info-slide" data-fi-slide>
+          <picture>
+            <source
+              srcset="./img/feature-info/feature-info2.png 1x, ./img/feature-info/feature-info2@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="feature-info-img"
+              src="./img/feature-info/feature-info2.png"
+              alt="No interruptions icon"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="feature-info-caption">No interruptions</figcaption>
+        </figure>
+
+        <figure class="feature-info-slide" data-fi-slide>
+          <picture>
+            <source
+              srcset="./img/feature-info/feature-info3.png 1x, ./img/feature-info/feature-info3@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="feature-info-img"
+              src="./img/feature-info/feature-info3.png"
+              alt="No unnecessary distractions icon"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="feature-info-caption">
+            No unnecessary distractions
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="feature-info-controls" aria-label="Slider navigation">
+      <button
+        type="button"
+        class="feature-info-ctrl-btn"
+        data-fi-prev
+        aria-label="Previous slide"
+      >
+        <svg class="ctrl-icon"><use href="/STP-12943/sprite.svg#arow-back"></use></svg>
+      </button>
+
+      <div class="feature-info-dots" aria-label="Slides">
+        <button
+          type="button"
+          class="feature-info-dot active"
+          data-fi-dot
+          data-slide="0"
+          aria-label="Go to slide 1"
+        ></button>
+        <button
+          type="button"
+          class="feature-info-dot"
+          data-fi-dot
+          data-slide="1"
+          aria-label="Go to slide 2"
+        ></button>
+        <button
+          type="button"
+          class="feature-info-dot"
+          data-fi-dot
+          data-slide="2"
+          aria-label="Go to slide 3"
+        ></button>
+      </div>
+
+      <button
+        type="button"
+        class="feature-info-ctrl-btn"
+        data-fi-next
+        aria-label="Next slide"
+      >
+        <svg class="ctrl-icon"><use href="/STP-12943/sprite.svg#arow-forward"></use></svg>
+      </button>
+    </div>
+
+    <div class="feature-info-description">
+      <p>Play for two minutes...<br />or stay longer than you planned.</p>
+      <p>
+        It’s the kind of game you open “just for a break”<br />and realize —
+        your mind is fully engaged again.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section id="features-details" class="features-details">
+  <div class="container features-details-wrapper">
+    <div class="features-details-header">
+      <h2 class="features-details-title">
+        Everything you need. Nothing you don’t.
+      </h2>
+      <p class="features-details-subtitle">
+        Here’s what you actually get with Maze Classic:
+      </p>
+    </div>
+
+    <div class="features-details-slider-viewport">
+      <div class="features-details-slider-track" data-fd-track>
+        <figure class="features-details-slide" data-fd-slide>
+          <picture>
+            <source
+              srcset="./img/features-details/feature-details1.png 1x, ./img/features-details/feature-details1@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="features-details-img"
+              src="./img/features-details/feature-details1.png"
+              alt="Cube maze icon"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="features-details-caption">
+            More than 100 different mazes
+          </figcaption>
+        </figure>
+
+        <figure class="features-details-slide" data-fd-slide>
+          <picture>
+            <source
+              srcset="./img/features-details/feature-details2.png 1x, ./img/features-details/feature-details2@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="features-details-img"
+              src="./img/features-details/feature-details2.png"
+              alt="Grid modes icon"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="features-details-caption">
+            Multiple labyrinth modes to explore
+          </figcaption>
+        </figure>
+
+        <figure class="features-details-slide" data-fd-slide>
+          <picture>
+            <source
+              srcset="./img/features-details/feature-details3.png 1x, ./img/features-details/feature-details3@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="features-details-img"
+              src="./img/features-details/feature-details3.png"
+              alt="Hand click icon"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="features-details-caption">
+            Thank god the controls actually work properly - I’m so sick of
+            puzzle games where the touch response is all wonky.
+          </figcaption>
+        </figure>
+
+        <figure class="features-details-slide" data-fd-slide>
+          <picture>
+            <source
+              srcset="./img/features-details/feature-details4.png 1x, ./img/features-details/feature-details4@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="features-details-img"
+              src="./img/features-details/feature-details4.png"
+              alt="Sun icon"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="features-details-caption">
+            Clean graphics that don’t overwhelm you
+          </figcaption>
+        </figure>
+
+        <figure class="features-details-slide" data-fd-slide>
+          <picture>
+            <source
+              srcset="./img/features-details/feature-details5.png 1x, ./img/features-details/feature-details5@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              class="features-details-img"
+              src="./img/features-details/feature-details5.png"
+              alt="Growth chart icon"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption class="features-details-caption">
+            It gets harder gradually without feeling like they’re just trying to
+            frustrate you
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="features-details-controls" aria-label="Slider navigation">
+      <button
+        type="button"
+        class="features-details-ctrl-btn"
+        data-fd-prev
+        aria-label="Previous slide"
+      >
+        <svg class="ctrl-icon"><use href="/STP-12943/sprite.svg#arow-back"></use></svg>
+      </button>
+
+      <div class="features-details-dots" aria-label="Slides">
+        <button
+          type="button"
+          class="features-details-dot active"
+          data-fd-dot
+          data-slide="0"
+          aria-label="Go to slide 1"
+        ></button>
+        <button
+          type="button"
+          class="features-details-dot"
+          data-fd-dot
+          data-slide="1"
+          aria-label="Go to slide 2"
+        ></button>
+        <button
+          type="button"
+          class="features-details-dot"
+          data-fd-dot
+          data-slide="2"
+          aria-label="Go to slide 3"
+        ></button>
+        <button
+          type="button"
+          class="features-details-dot"
+          data-fd-dot
+          data-slide="3"
+          aria-label="Go to slide 4"
+        ></button>
+        <button
+          type="button"
+          class="features-details-dot"
+          data-fd-dot
+          data-slide="4"
+          aria-label="Go to slide 5"
+        ></button>
+      </div>
+
+      <button
+        type="button"
+        class="features-details-ctrl-btn"
+        data-fd-next
+        aria-label="Next slide"
+      >
+        <svg class="ctrl-icon"><use href="/STP-12943/sprite.svg#arow-forward"></use></svg>
+      </button>
+    </div>
+
+    <div class="features-details-description">
+      <p>
+        It’s built for everyone — <br />
+        kids, adults, anyone who enjoys figuring things out.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section id="reviews" class="reviews">
+  <div class="container reviews-wrapper">
+    <div class="reviews-header">
+      <h2 class="reviews-title">What players notice after a few levels</h2>
+    </div>
+
+    <div class="reviews-slider-viewport">
+      <div class="reviews-slider-track" data-rev-track>
+        <blockquote class="reviews-slide" data-rev-slide>
+          <cite class="reviews-author">Anna K.</cite>
+          <p class="reviews-text">
+            “Got this just to waste some time, but I’m kinda obsessed now, not
+            gonna lie. Started easy enough, but wow, some of these later levels
+            really make you think! I like that it doesn’t overwhelm you. It’s
+            calm, but it makes you think.”
+          </p>
+        </blockquote>
+
+        <blockquote class="reviews-slide" data-rev-slide>
+          <cite class="reviews-author">David M.</cite>
+          <p class="reviews-text">
+            “There’s something satisfying about guiding the light through the
+            maze. Controls work great - no lag or weird glitches. The level
+            design is really well done - you can tell someone put thought into
+            it. Some of the harder ones really made me stop and rethink my
+            approach.”
+          </p>
+        </blockquote>
+
+        <blockquote class="reviews-slide" data-rev-slide>
+          <cite class="reviews-author">Sophie T.</cite>
+          <p class="reviews-text">
+            “I play it offline when I travel, and it’s perfect for that. No
+            distractions, just puzzles. It helps me focus, and I actually feel
+            like I’m using my brain instead of just tapping randomly.”
+          </p>
+        </blockquote>
+
+        <blockquote class="reviews-slide" data-rev-slide>
+          <cite class="reviews-author">Mark L.</cite>
+          <p class="reviews-text">
+            “What I appreciate most is the balance. It’s relaxing, but not
+            boring. Challenging, but not frustrating. It’s rare to find a puzzle
+            game that feels this clean and well-paced.”
+          </p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="reviews-controls" aria-label="Slider navigation">
+      <button
+        type="button"
+        class="reviews-ctrl-btn"
+        data-rev-prev
+        aria-label="Previous slide"
+      >
+        <svg class="ctrl-icon"><use href="/STP-12943/sprite.svg#arow-back"></use></svg>
+      </button>
+
+      <div class="reviews-dots" aria-label="Slides">
+        <button
+          type="button"
+          class="reviews-dot active"
+          data-rev-dot
+          data-slide="0"
+          aria-label="Go to slide 1"
+        ></button>
+        <button
+          type="button"
+          class="reviews-dot"
+          data-rev-dot
+          data-slide="1"
+          aria-label="Go to slide 2"
+        ></button>
+        <button
+          type="button"
+          class="reviews-dot"
+          data-rev-dot
+          data-slide="2"
+          aria-label="Go to slide 3"
+        ></button>
+        <button
+          type="button"
+          class="reviews-dot"
+          data-rev-dot
+          data-slide="3"
+          aria-label="Go to slide 4"
+        ></button>
+      </div>
+
+      <button
+        type="button"
+        class="reviews-ctrl-btn"
+        data-rev-next
+        aria-label="Next slide"
+      >
+        <svg class="ctrl-icon"><use href="/STP-12943/sprite.svg#arow-forward"></use></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container footer-wrapper">
+    <span style="display: none">Generated: 2025-04-07, Hash: k39fd7x</span>
+
+    <ul class="footer-list">
+      <li class="footer-item">
+        <a class="footer-link" href="./privacy-policy.html">Privacy Policy</a>
+      </li>
+      <li class="footer-item">
+        <a class="footer-link" href="./terms-conditions.html"
+          >Terms & Conditions</a
+        >
+      </li>
+    </ul>
+
+    <p class="footer-copyright">
+      <span class="footer-copy-main"
+        >© 2026 Maze Classic | All Rights Reserved | digitalatlas.pro</span
+      >
+    </p>
+  </div>
+</footer>
+
+
+    <div class="mobile-menu" data-visible="close">
+  <div class="container">
+    <button class="mm-close-btn" type="button" data-menu-close>
+      <svg class="btn-close-icon">
+        <use href="/STP-12943/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="mm-list-navigation" data-menu-navigation>
+      <li class="mm-item-navigation">
+        <a href="#" class="mm-item-nav-link">Home</a>
+      </li>
+      <li class="mm-item-navigation">
+        <a href="#gameplay" class="mm-item-nav-link">Gameplay</a>
+      </li>
+      <li class="mm-item-navigation">
+        <a href="#modes" class="mm-item-nav-link">Modes</a>
+      </li>
+      <li class="mm-item-navigation">
+        <a href="#feature-info" class="mm-item-nav-link">Features</a>
+      </li>
+      <li class="mm-item-navigation">
+        <a href="#reviews" class="mm-item-nav-link">Reviews</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </body>
+</html>
