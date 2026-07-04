@@ -11,7 +11,6 @@ export default defineConfig(({ command }) => {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
-    base: command === 'serve' ? '/' : '/STP-12454-digitalatlas.pro/',
 
     build: {
       sourcemap: true,
