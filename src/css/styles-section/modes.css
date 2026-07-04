@@ -1,0 +1,164 @@
+/* --- Секция Modes --- */
+
+.modes {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 40px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .modes {
+    padding: 80px 0;
+  }
+}
+
+.modes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media screen and (min-width: 1440px) {
+  .modes-container {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+
+    gap: 60px;
+  }
+}
+
+.modes-content {
+  /* Стили для мобилки отсутствуют, блок идет по потоку */
+}
+
+@media screen and (min-width: 1440px) {
+  .modes-content {
+    flex-grow: 1;
+    max-width: 710px;
+  }
+}
+
+.modes-title {
+  font-size: 26px;
+}
+
+@media screen and (min-width: 1440px) {
+  .modes-title {
+    font-size: 50px;
+    max-width: 500px;
+
+  }
+}
+
+.modes-tagline {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--white-color);
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .modes-tagline {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+}
+
+.modes-subtitle {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .modes-subtitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.modes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1440px) {
+  .modes-list {
+      gap: 10px;
+      margin-bottom: 30px;
+  }
+}
+
+.modes-item {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .modes-item {
+    font-size: 20px;
+    gap: 20px;
+  }
+}
+
+.modes-item::before {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-color: var(--orange-color);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+@media screen and (min-width: 1440px) {
+  .modes-item::before {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.modes-description {
+  max-width: 648px;
+  font-size: 14px;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  opacity: 0.9;
+}
+@media screen and (min-width: 1440px) {
+  .modes-description {
+    font-size: 20px;
+  }
+}
+
+.modes-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .modes-preview {
+    flex-shrink: 0;
+    width: 282px;
+    height: 472px;
+  }
+}
+
+.modes-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (min-width: 1440px) {
+  .modes-img {
+    width: 282px;
+    height: 472px;
+    object-fit: contain;
+  }
+}

@@ -1,1 +1,53 @@
-<h2>Modes</h2>
+<section id="modes" class="modes">
+  <div class="container modes-container">
+    <!-- Текстовий контент -->
+    <div class="modes-content">
+      <h2 class="modes-title">Things get interesting the further you get</h2>
+      <p class="modes-tagline">You won’t notice it at first.</p>
+
+      <div class="modes-details">
+        <p class="modes-subtitle">But with each level:</p>
+        <ul class="modes-list">
+          <li class="modes-item">The shapes become less predictable</li>
+          <li class="modes-item">The routes become less obvious</li>
+          <li class="modes-item">The decisions start to matter more</li>
+        </ul>
+      </div>
+
+      <div class="modes-description">
+        <p>
+          From small relaxing puzzles to complex labyrinths,<br />
+          you'll find yourself really having to focus and remember the layout.
+        </p>
+        <p>
+          More than 100 variations — <br />
+          and none of them feel exactly the same.
+        </p>
+      </div>
+    </div>
+
+    <!-- Блок з інтерактивним макетом / картинкою -->
+    <figure class="modes-preview">
+      <picture>
+        <!-- Десктопная версия (от 1440px) и ретина 2x -->
+        <source
+          media="(min-width: 1440px)"
+          srcset="./img/modes/modes.png 1x, ./img/modes/modes@2x.png 2x"
+          type="image/png"
+        />
+        <!-- Мобильная версия (по умолчанию) и ретина 2x -->
+        <source
+          srcset="./img/modes/modes-mob.png 1x, ./img/modes/modes-mob@2x.png 2x"
+          type="image/png"
+        />
+        <!-- Фоллбек для старых браузеров -->
+        <img
+          src="./img/modes/modes.png"
+          alt="Maze gameplay preview on mobile screen"
+          class="modes-img"
+          loading="lazy"
+        />
+      </picture>
+    </figure>
+  </div>
+</section>
