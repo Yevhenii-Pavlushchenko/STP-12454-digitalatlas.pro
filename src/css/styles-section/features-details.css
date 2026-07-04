@@ -116,7 +116,6 @@
 .features-details-caption {
   font-family: var(--font-inter);
   font-size: 13px;
-  color: var(--white-color);
   text-align: center;
   line-height: 1.4;
 
@@ -199,8 +198,6 @@
   font-size: 14px;
   line-height: 1.5;
   font-style: italic;
-  color: var(--white-color);
-  opacity: 0.8;
 
   @media screen and (min-width: 1440px) {
     font-size: 20px;
