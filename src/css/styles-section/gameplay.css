@@ -1,6 +1,3 @@
-/* ========================================================
-   Оновлена секція Gameplay під повну відповідність макету
-   ======================================================== */
 .gameplay {
   background-color: var(--black-color);
 }
@@ -9,8 +6,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Центруємо всі блоки на мобілці */
   gap: 24px;
+
+  @media only screen and (min-width: 1440px) {
+    gap: 30px;
+  }
 }
 
 .gameplay-info {
@@ -18,6 +18,10 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media only screen and (min-width: 1440px) {
+    max-width: 100%;
+  }
 }
 
 .gameplay-title {
@@ -26,44 +30,61 @@
   line-height: 1.2;
   margin-bottom: 12px;
   max-width: 340px;
+
+  @media only screen and (min-width: 1440px) {
+    font-size: 48px;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
 }
 
 .gameplay-subtitle {
   font-style: italic;
   font-size: 16px;
+  color: var(--bronze-color);
   margin-bottom: 8px;
+
+  @media only screen and (min-width: 1440px) {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
 }
 
-/* Обгортка, яка жорстко обрізає бічні картки, що виглядають */
 .gameplay-slider-viewport {
   width: 219px;
-  /* Строго ширина однієї картки */
   overflow: hidden;
-  /* Ховаємо все, що виходить за межі */
   margin: 0 auto;
-  /* Центруємо вьюпорт на екрані */
+
+  @media only screen and (min-width: 1440px) {
+    width: 100%;
+    max-width: 1200px;
+    overflow: visible;
+  }
 }
 
-/* Трек слайдера: прибрали великі паддінги, тепер він працює всередині вьюпорту */
 .gameplay-slider-track {
   display: flex;
   gap: 24px;
-  /* Збільшена відстань між слайдами */
   overflow-x: auto;
-  scroll-linecap: round;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: none;
   width: 100%;
   padding: 10px 0;
-  /* Вертикальні відступи, щоб не обрізалися тіні чи рамки карток */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    overflow-x: visible;
+    scroll-snap-type: none;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+  }
 }
 
-.gameplay-slider-track::-webkit-scrollbar {
-  display: none;
-}
-
-/* Слайд: точні розміри з макета */
 .gameplay-slide {
   flex: 0 0 219px;
   height: 227px;
@@ -76,6 +97,13 @@
   border-radius: 12px;
   padding: 16px;
   margin: 0;
+
+  @media only screen and (min-width: 1440px) {
+    flex: none;
+    width: 287px;
+    height: auto;
+    padding: 40px 24px;
+  }
 }
 
 .gameplay-img {
@@ -84,6 +112,13 @@
   height: 117px;
   object-fit: contain;
   margin-bottom: 16px;
+
+  @media only screen and (min-width: 1440px) {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 24px;
+  }
 }
 
 .gameplay-caption {
@@ -92,85 +127,81 @@
   color: var(--white-color);
   text-align: center;
   line-height: 1.4;
+
+  @media only screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
 }
 
-/* Навігація Слайдера: вирівнювання строго по центру під слайдером */
 .gameplay-controls {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   margin-top: 8px;
+
+  @media only screen and (min-width: 1440px) {
+    display: none;
+  }
 }
 
-/* Стилізація кнопок-стрілок з макета */
 .gameplay-ctrl-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   cursor: pointer;
   padding: 0;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  background-color: var(--black-color);
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 
-  /* Ліва стрілка (Назад): за замовчуванням прозора з білою рамкою */
-  &.btn-prev {
-    background-color: transparent;
-    border: 2px solid var(--white-color);
-
-    .ctrl-icon {
-      stroke: var(--white-color);
-    }
-  }
-
-  /* Права стрілка (Вперед): за замовчуванням повністю помаранчева */
-  &.btn-next {
+  &:hover {
     background-color: var(--orange-color);
-    border: none;
-
-    .ctrl-icon {
-      stroke: var(--black-color);
-      /* Чорна стрілка всередині помаранчевого кола */
-    }
+    border-color: var(--orange-color);
+    color: var(--black-color);
   }
 
   &:active {
-    transform: scale(0.95);
+    transform: scale(0.92);
   }
 }
 
 .ctrl-icon {
+  display: block;
   width: 24px;
   height: 24px;
-  fill: none;
+  fill: none !important;
 }
 
-/* Точки пагинації */
 .gameplay-dots {
   display: flex;
   gap: 8px;
   align-items: center;
+  justify-content: center;
+  height: 6px;
 }
 
 .gameplay-dot {
-  width: 8px;
-  height: 8px;
+  width: 4px;
+  height: 4px;
   border: none;
   border-radius: 50%;
   background-color: var(--white-color);
   opacity: 0.6;
   cursor: pointer;
   padding: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 
   &.active {
     opacity: 1;
+    transform: scale(1.5);
   }
 }
 
-/* Блок тексту знизу секції */
 .gameplay-description {
   display: flex;
   flex-direction: column;
@@ -178,6 +209,12 @@
   text-align: center;
   max-width: 340px;
   margin-top: 16px;
+
+  @media only screen and (min-width: 1440px) {
+    max-width: 520px;
+    margin-top: 0;
+    width: 100%;
+  }
 }
 
 .gameplay-description p {
@@ -185,174 +222,8 @@
   line-height: 1.5;
   font-style: italic;
   color: var(--white-color);
-}
 
-/* ========================================================
-   Адаптив: Десктопна версія (від 1440px) — повертаємо 3 в ряд
-   ======================================================== */
-@media only screen and (min-width: 1440px) {
-  .gameplay-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* Дозволяє нижньому опису впасти під сітку */
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 40px;
-  }
-
-  .gameplay-info {
-    align-items: flex-start;
-    text-align: left;
-    max-width: 380px;
-  }
-
-  .gameplay-title {
-    font-size: 48px;
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .gameplay-subtitle {
-    font-size: 18px;
-  }
-
-  /* Приховуємо стрілки та точки */
-  .gameplay-controls {
-    display: none;
-  }
-
-  /* Скидаємо обмеження вьюпорту на десктопі, щоб картки стали в ряд */
-  .gameplay-slider-viewport {
-    width: 100%;
-    max-width: 860px;
-    overflow: visible;
-    margin: 0;
-  }
-
-  /* Розвертаємо трек у статичну десктопну сітку */
-  .gameplay-slider-track {
-    overflow-x: visible;
-    scroll-snap-type: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    padding: 0;
-  }
-
-  .gameplay-slide {
-    flex: none;
-    width: 100%;
-    height: auto;
-    padding: 32px 24px;
-  }
-
-  /* Повертаємо великий розмір картинок для десктопа */
-  .gameplay-img {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-  }
-
-  /* Текст опису на десктопі розтягується під усім блоком */
-  .gameplay-description {
-    max-width: 100%;
-    text-align: left;
-    margin-top: 40px;
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-
-  /* Вся обертка выстраивается в одну колонку по центру */
-  .gameplay-wrapper {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    /* Увеличиваем общий отступ между крупными блоками */
-  }
-
-  /* Заголовок и подзаголовок центрируются */
-  .gameplay-info {
-    align-items: center;
-    text-align: center;
-    max-width: 100%;
-    position: static;
-    /* Отменяем sticky, если оно было */
-  }
-
-  .gameplay-title {
-    font-size: 48px;
-    max-width: 800px;
-    /* Даем заголовку раскрыться в ширину */
-    margin-bottom: 20px;
-  }
-
-  .gameplay-subtitle {
-    font-size: 18px;
-    margin-bottom: 0;
-  }
-
-  /* Скрываем стрелки и точки */
-  .gameplay-controls {
-    display: none;
-  }
-
-  /* Сбрасываем мобильный ограничитель вьюпорта */
-  .gameplay-slider-viewport {
-    width: 100%;
-    max-width: 1200px;
-    /* Максимальная ширина всей сетки из 3 карточек */
-    overflow: visible;
-    margin: 0 auto;
-  }
-
-  /* Сетка из 3 карточек ровно в один ряд */
-  .gameplay-slider-track {
-    overflow-x: visible;
-    scroll-snap-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    /* Чуть увеличиваем расстояние между карточками на десктопе */
-    padding: 0;
-  }
-
-  /* Стили десктопной карточки */
-  .gameplay-slide {
-    flex: none;
-    width: 287px;
-    height: auto;
-    padding: 40px 24px;
-
-  }
-
-  /* Крупный размер картинок лабиринтов на десктопе */
-  .gameplay-img {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-    margin-bottom: 24px;
-  }
-
-  .gameplay-caption {
-    font-size: 18px;
-    /* Немного увеличиваем шрифт подписи */
-  }
-
-  /* Нижний блок текста — тоже по центру */
-  .gameplay-description {
-    max-width: 520px;
-    /* Ограничиваем ширину, чтобы строки не были слишком длинными */
-    text-align: center;
-    margin-top: 0;
-    width: 100%;
-  }
-
-  .gameplay-description p {
+  @media only screen and (min-width: 1440px) {
     font-size: 20px;
-    /* Делаем нижний текст более читаемым на десктопе */
   }
 }
