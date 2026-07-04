@@ -1,16 +1,13 @@
-<section class="gameplay">
+<section id="gameplay" class="gameplay">
   <div class="container gameplay-wrapper">
-    <!-- Текстова колонка (Заголовок і підзаголовок) -->
     <div class="gameplay-info">
       <h2 class="gameplay-title">Simple to move. Harder to master.</h2>
       <p class="gameplay-subtitle">There's no complicated system here.</p>
     </div>
 
-    <!-- Контейнер зі слайдами -->
     <div class="gameplay-slider-viewport">
-      <div class="gameplay-slider-track">
-        <!-- Слайд 1 -->
-        <figure class="gameplay-slide">
+      <div class="gameplay-slider-track" data-slider-track>
+        <figure class="gameplay-slide" data-slider-slide>
           <picture>
             <source
               media="(min-width: 1440px)"
@@ -39,8 +36,7 @@
           </figcaption>
         </figure>
 
-        <!-- Слайд 2 -->
-        <figure class="gameplay-slide">
+        <figure class="gameplay-slide" data-slider-slide>
           <picture>
             <source
               media="(min-width: 1440px)"
@@ -67,8 +63,7 @@
           <figcaption class="gameplay-caption">Follow the paths</figcaption>
         </figure>
 
-        <!-- Слайд 3 -->
-        <figure class="gameplay-slide">
+        <figure class="gameplay-slide" data-slider-slide>
           <picture>
             <source
               media="(min-width: 1440px)"
@@ -97,11 +92,11 @@
       </div>
     </div>
 
-    <!-- Блок навігації (тепер лежить під слайдами по центру) -->
     <div class="gameplay-controls" aria-label="Slider navigation">
       <button
         type="button"
         class="gameplay-ctrl-btn btn-prev"
+        data-slider-prev
         aria-label="Previous slide"
       >
         <svg class="ctrl-icon"><use href="/sprite.svg#arow-back"></use></svg>
@@ -111,18 +106,21 @@
         <button
           type="button"
           class="gameplay-dot active"
+          data-slider-dot
           data-slide="0"
           aria-label="Go to slide 1"
         ></button>
         <button
           type="button"
           class="gameplay-dot"
+          data-slider-dot
           data-slide="1"
           aria-label="Go to slide 2"
         ></button>
         <button
           type="button"
           class="gameplay-dot"
+          data-slider-dot
           data-slide="2"
           aria-label="Go to slide 3"
         ></button>
@@ -131,6 +129,7 @@
       <button
         type="button"
         class="gameplay-ctrl-btn btn-next"
+        data-slider-next
         aria-label="Next slide"
       >
         <svg class="ctrl-icon">
@@ -139,7 +138,6 @@
       </button>
     </div>
 
-    <!-- Нижній опис (новий блок з макета) -->
     <div class="gameplay-description">
       <p>
         That’s it. And yet... some mazes feel effortless, while others make you
