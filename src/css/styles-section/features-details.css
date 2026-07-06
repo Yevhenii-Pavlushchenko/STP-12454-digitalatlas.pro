@@ -1,11 +1,11 @@
 
-.features-details-wrapper {
+.fdtl_features-details-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.features-details-header {
+.fdtl_features-details-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,7 @@
   }
 }
 
-.features-details-title {
+.fdtl_features-details-title {
   font-size: 25px;
   line-height: 1.2;
   margin-bottom: 10px;
@@ -28,7 +28,7 @@
   }
 }
 
-.features-details-subtitle {
+.fdtl_features-details-subtitle {
   font-style: italic;
   font-size: 13px;
 
@@ -37,7 +37,7 @@
   }
 }
 
-.features-details-slider-viewport {
+.fdtl_features-details-slider-viewport {
   width: 219px;
   overflow: hidden;
   margin: 0 auto;
@@ -49,7 +49,7 @@
   }
 }
 
-.features-details-slider-track {
+.fdtl_features-details-slider-track {
   display: flex;
   gap: 24px;
   overflow-x: auto;
@@ -73,7 +73,7 @@
   }
 }
 
-.features-details-slide {
+.fdtl_features-details-slide {
   flex: 0 0 219px;
   height: auto;
   min-height: 227px;
@@ -95,7 +95,7 @@
   }
 }
 
-.features-details-img {
+.fdtl_features-details-img {
   display: block;
   width: 70px;
   height: 70px;
@@ -103,7 +103,7 @@
   margin-bottom: 20px;
 }
 
-.features-details-caption {
+.fdtl_features-details-caption {
   font-size: 13px;
   text-align: center;
   line-height: 1.4;
@@ -113,7 +113,7 @@
   }
 }
 
-.features-details-controls {
+.fdtl_features-details-controls {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,7 +125,7 @@
   }
 }
 
-.features-details-ctrl-btn {
+.fdtl_features-details-ctrl-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,7 +150,7 @@
   }
 }
 
-.features-details-dots {
+.fdtl_features-details-dots {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -158,7 +158,7 @@
   height: 6px;
 }
 
-.features-details-dot {
+.fdtl_features-details-dot {
   width: 4px;
   height: 4px;
   border: none;
@@ -175,13 +175,13 @@
   }
 }
 
-.features-details-description {
+.fdtl_features-details-description {
   text-align: center;
   margin-top: 10px;
   width: 100%;
 }
 
-.features-details-description p {
+.fdtl_features-details-description p {
   font-size: 14px;
   line-height: 1.5;
   font-style: italic;

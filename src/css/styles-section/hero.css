@@ -1,4 +1,4 @@
-.hero {
+.hr_hero {
   padding: 10px 0 0 0;
 
   @media only screen and (min-width: 1440px) {
@@ -7,7 +7,7 @@
     }
 
 }
-.hero-wrapper {
+.hr_hero-wrapper {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -17,7 +17,7 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .hero-wrapper {
+  .hr_hero-wrapper {
     max-width: 1440px;
     flex-direction: row;
     align-items: center;
@@ -25,7 +25,7 @@
   }
 }
 
-.hero-title-wrapper {
+.hr_hero-title-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,13 +34,13 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .hero-title-wrapper {
+  .hr_hero-title-wrapper {
     max-width: 567px;
     padding: 0 0 0 102px;
   }
 }
 
-.hero-title {
+.hr_hero-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
@@ -48,13 +48,13 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .hero-title {
+  .hr_hero-title {
     font-size: 60px;
     margin-bottom: 10px;
   }
 }
 
-.hero-subtitle {
+.hr_hero-subtitle {
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
@@ -63,13 +63,13 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .hero-subtitle {
+  .hr_hero-subtitle {
     font-size: 18px;
     margin-bottom: 50px;
   }
 }
 
-.hero-story-wrapper {
+.hr_hero-story-wrapper {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -77,17 +77,17 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .hero-story-wrapper {
+  .hr_hero-story-wrapper {
     margin-bottom: 40px;
   }
 }
 
-.hero-story-wrapper p {
+.hr_hero-story-wrapper p {
   font-size: 14px;
   line-height: 1.6;
 }
 
-.hero-btn {
+.hr_hero-btn {
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -100,32 +100,32 @@
   transition: background-color 0.3s ease;
 }
 
-.hero-btn:hover {
+.hr_hero-btn:hover {
   background-color: var(--bronze-color);
 }
 
 @media only screen and (min-width: 1440px) {
-  .hero-btn {
+  .hr_hero-btn {
     width: 454px;
     align-self: flex-start;
       font-size: 20px;
   }
 }
 
-.hero-img-wrapper {
+.hr_hero-img-wrapper {
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
 }
 
 @media only screen and (min-width: 1440px) {
-  .hero-img-wrapper {
+  .hr_hero-img-wrapper {
     max-width: 720px;
     margin: 0;
   }
 }
 
-.hero-img {
+.hr_hero-img {
   display: block;
   width: 100%;
   height: auto;

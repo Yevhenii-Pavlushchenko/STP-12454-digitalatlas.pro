@@ -1,13 +1,17 @@
+ @media only screen and (max-width: 1439px) {
+  .mds_gameplay {
+      padding-top: 50px;
+    }
+}
 
-
-.gameplay-wrapper {
+.mds_gameplay-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 
 }
 
-.gameplay-info {
+.mds_gameplay-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +24,7 @@
   }
 }
 
-.gameplay-title {
+.mds_gameplay-title {
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -30,7 +34,7 @@
   }
 }
 
-.gameplay-subtitle {
+.mds_gameplay-subtitle {
   font-style: italic;
   font-size: 16px;
 
@@ -39,7 +43,7 @@
   }
 }
 
-.gameplay-slider-viewport {
+.mds_gameplay-slider-viewport {
   width: 219px;
   overflow: hidden;
   margin: 0 auto;
@@ -51,7 +55,7 @@
   }
 }
 
-.gameplay-slider-track {
+.mds_gameplay-slider-track {
   display: flex;
   gap: 24px;
   overflow-x: auto;
@@ -76,7 +80,7 @@
   }
 }
 
-.gameplay-slide {
+.mds_gameplay-slide {
   flex: 0 0 219px;
   height: 227px;
   scroll-snap-align: center;
@@ -98,7 +102,7 @@
   }
 }
 
-.gameplay-img {
+.mds_gameplay-img {
   display: block;
   width: 117px;
   height: 117px;
@@ -113,7 +117,7 @@
   }
 }
 
-.gameplay-caption {
+.mds_gameplay-caption {
   font-family: var(--font-inter);
   font-size: 14px;
   text-align: center;
@@ -124,7 +128,7 @@
   }
 }
 
-.gameplay-controls {
+.mds_gameplay-controls {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,7 +141,7 @@
   }
 }
 
-.gameplay-ctrl-btn {
+.mds_gameplay-ctrl-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,14 +166,14 @@
   }
 }
 
-.ctrl-icon {
+.mds_ctrl-icon {
   display: block;
   width: 24px;
   height: 24px;
   fill: none !important;
 }
 
-.gameplay-dots {
+.mds_gameplay-dots {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -177,7 +181,7 @@
   height: 6px;
 }
 
-.gameplay-dot {
+.mds_gameplay-dot {
   width: 4px;
   height: 4px;
   border: none;
@@ -194,7 +198,7 @@
   }
 }
 
-.gameplay-description {
+.mds_gameplay-description {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -209,7 +213,7 @@
   }
 }
 
-.gameplay-description p {
+.mds_gameplay-description p {
   font-size: 16px;
   line-height: 1.5;
   font-style: italic;

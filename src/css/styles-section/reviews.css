@@ -1,11 +1,11 @@
 
-.reviews-wrapper {
+.rvw_reviews-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.reviews-header {
+.rvw_reviews-header {
   text-align: center;
   margin-bottom: 30px;
 
@@ -14,7 +14,7 @@
   }
 }
 
-.reviews-title {
+.rvw_reviews-title {
   font-size: 23px;
   font-weight: 700;
   line-height: 1.2;
@@ -24,7 +24,7 @@
   }
 }
 
-.reviews-slider-viewport {
+.rvw_reviews-slider-viewport {
   width: 252px;
   overflow: hidden;
   margin: 0 auto;
@@ -36,7 +36,7 @@
   }
 }
 
-.reviews-slider-track {
+.rvw_reviews-slider-track {
   display: flex;
   gap: 24px;
   overflow-x: auto;
@@ -61,7 +61,7 @@
   }
 }
 
-.reviews-slide {
+.rvw_reviews-slide {
   flex: 0 0 252px;
   height: 253px;
   scroll-snap-align: center;
@@ -82,7 +82,7 @@
   }
 }
 
-.reviews-author {
+.rvw_reviews-author {
   font-family: var(--font-inter);
   font-size: 16px;
   font-weight: 700;
@@ -90,7 +90,7 @@
   margin-bottom: 12px;
 }
 
-.reviews-text {
+.rvw_reviews-text {
   font-size: 14px;
   font-style: italic;
   line-height: 1.4;
@@ -98,7 +98,7 @@
   margin: 0;
 }
 
-.reviews-controls {
+.rvw_reviews-controls {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +110,7 @@
   }
 }
 
-.reviews-ctrl-btn {
+.rvw_reviews-ctrl-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,14 +135,14 @@
   }
 }
 
-.ctrl-icon {
+.rvw_ctrl-icon {
   display: block;
   width: 24px;
   height: 24px;
   fill: none !important;
 }
 
-.reviews-dots {
+.rvw_reviews-dots {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -150,7 +150,7 @@
   height: 6px;
 }
 
-.reviews-dot {
+.rvw_reviews-dot {
   width: 4px;
   height: 4px;
   border: none;
